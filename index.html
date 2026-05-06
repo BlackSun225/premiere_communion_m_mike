@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <!-- <link rel="icon" type="image/png" href="icons/favicon-32x32.png" /> -->
+        <title>Menu Première Communion</title>
+        
+    </head>
+    <body>
+        <h1>Menu Première Communion</h1>
+        <section class="accordion">
+            <h2 class="accordionHead" >Mises en bouche</h2>
+            <ul class="accordionBody">
+                <li class="accordionItem">Pastelles au four à la viande</li>
+                <li class="accordionItem">Quiches</li>
+                <li class="accordionItem">Wrap</li>
+            </ul>
+        </section>
+        <section class="accordion">
+            <h2 class="accordionHead">Entrées</h2>
+            <ul class="accordionBody">
+                <li class="accordionItem">Salades de crudités</li>
+                <li class="accordionItem">Mini bouchées à la reine</li>
+            </ul>
+        </section>
+        <section class="accordion">
+            <h2 class="accordionHead">Plats</h2>
+            <ul class="accordionBody">
+                <li class="accordionItem">Gigot d'agneau</li>
+                <li class="accordionItem">Poulet fumé façon française</li>
+                <li class="accordionItem">Carpe au grill</li>
+                <li class="accordionItem">Tchep</li>
+                <li class="accordionItem">Porc au four</li>
+                <li class="accordionItem">Placali sauce kplala</li>
+                <li class="accordionItem">Foutou sauce aubergine</li>
+                <li class="accordionItem">Surprise du chef</li>
+            </ul>
+        </section>
+        <section class="accordion">
+            <h2 class="accordionHead">Accompagnement</h2>
+            <ul class="accordionBody">
+                <li class="accordionItem">Alloco</li>
+                <li class="accordionItem">Claclo</li>
+                <li class="accordionItem">Attiéké</li>
+                <li class="accordionItem">Attounkou</li>
+                <li class="accordionItem">Gratin dauphinois</li>
+                <li class="accordionItem">Frites de pommes de terre</li>
+                <li class="accordionItem">Riz blanc</li>
+            </ul>
+        </section>
+        <section class="accordion">
+            <h2 class="accordionHead">Déssert</h2>
+            <ul class="accordionBody">
+                <li class="accordionItem">Gateau de première communion</li>
+                <li class="accordionItem">Salade de fruits de saison</li>
+            </ul>
+        </section>
+        <section class="accordion">
+            <h2 class="accordionHead">Boissons</h2>
+            <ul class="accordionBody">
+                <li class="accordionItem">Smoothies</li>
+                <li class="accordionItem">Sucreries</li>
+                <li class="accordionItem">Cocktails sans alcool</li>
+                <li class="accordionItem">Bière (beaufort)</li>
+                <li class="accordionItem">Cocktails alcoolisés</li>
+                <li class="accordionItem">Liqueurs (whisky, porto, bailey's,...)</li>
+                <li class="accordionItem">Vin rouge (Côte de Rhône)</li>
+                <li class="accordionItem">Vin blanc moelleux</li>
+                <li class="accordionItem">Rosé</li>
+                <li class="accordionItem">Champagne (brut, demi-sec)</li>
+            </ul>
+        </section>
+        <script>
+            const accordionHeadList = document.querySelectorAll(".accordionHead");
+            const accordionBodyList = document.querySelectorAll(".accordionBody");
+
+            Array.from(accordionHeadList).forEach(head => {
+                head.addEventListener("click", (event) => {
+                    const isActive = event.target.classList.contains("active");
+                    Array.from(accordionHeadList).forEach(elem => elem.className = "accordionHead");
+                    if(!isActive) {
+                        event.target.classList.add("active");
+                    }
+                });
+            })
+        </script>  
+    </body>
+</html>

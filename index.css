@@ -20,11 +20,11 @@ body {
 
 h1 {
     padding: 0.9rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
     background-color: var(--black);
     color: var(--primary);
-    font-family: "Kaushan Script", cursive, serif;
+    font-family: "Montez", cursive, serif;
     font-weight: 400;
 }
 
@@ -35,18 +35,18 @@ h1 {
     border-top: 1px solid var(--grayOne);
     border-bottom: 1px solid var(--grayOne);
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     background-color: var(--grayTwo);
     letter-spacing: 1px;
-    font-family: "Chicle", serif;
+    font-family: "Cinzel", serif;
 }
 
 .accordionHead.active {
-    color: var(--secondary);
     background-color: white;
     color: var(--secondary);
     font-weight: 500;
+    /* text-shadow: 0 0 1px black; */
 }
 
 .accordionHead + .accordionBody {
@@ -63,12 +63,11 @@ h1 {
     display: block;
     text-align: center;
     padding-top: 0.9rem;
-    font-size: 1rem;
-    font-family: "Kaushan Script", cursive, serif;
+    font-size: 1.6rem;
+    font-family: "Montez", cursive;
 }
 
 .accordionItem:last-of-type {
     padding-bottom: 0.9rem;
 }
 
-s

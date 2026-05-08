@@ -2,6 +2,8 @@
     --grayOne: rgb(184, 174, 174);
     --grayTwo: rgb(235, 231, 231);
     --black: rgb(29, 29, 29);
+    --primary: #C4EEFF;
+    --secondary: #FF7D00;
 }
 
 * {
@@ -11,16 +13,18 @@
 }
 
 body {
+    height: 100dvh;
     font-family: Arial, Helvetica, sans-serif;
+    background: url("./assets/2151022286.jpg") no-repeat center;
 }
 
 h1 {
     padding: 0.9rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
     background-color: var(--black);
-    color: ivory;
-    font-weight: 600;
+    color: var(--primary);
+    font-family: "Tangerine", cursive, sans-serif;
 }
 
 .accordionHead {
@@ -34,11 +38,14 @@ h1 {
     text-transform: uppercase;
     background-color: var(--grayTwo);
     letter-spacing: 1px;
+    font-family: "Chicle", serif;
 }
 
 .accordionHead.active {
     color: ivory;
-    background-color: var(--grayOne);
+    background-color: white;
+    color: var(--secondary);
+    font-weight: 500;
 }
 
 .accordionHead + .accordionBody {
@@ -48,13 +55,16 @@ h1 {
 
 .accordionHead.active + .accordionBody {
     display: block;
+    background: rgba(255, 255, 255, 0.671);
 }
 
 .accordionItem {
     display: block;
     text-align: center;
     padding-top: 0.9rem;
-    font-size: 0.9rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Tangerine", cursive, sans-serif;
 }
 
 .accordionItem:last-of-type {

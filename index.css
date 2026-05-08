@@ -2,8 +2,8 @@
     --grayOne: rgb(184, 174, 174);
     --grayTwo: rgb(235, 231, 231);
     --black: rgb(29, 29, 29);
-    --primary: #C4EEFF;
-    --secondary: #FF7D00;
+    --primary: #00b7ff;
+    --secondary: #ffc400;
 }
 
 * {
@@ -20,11 +20,12 @@ body {
 
 h1 {
     padding: 0.9rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     background-color: var(--black);
     color: var(--primary);
-    font-family: "Tangerine", cursive, sans-serif;
+    font-family: "Kaushan Script", cursive, serif;
+    font-weight: 400;
 }
 
 .accordionHead {
@@ -42,7 +43,7 @@ h1 {
 }
 
 .accordionHead.active {
-    color: ivory;
+    color: var(--secondary);
     background-color: white;
     color: var(--secondary);
     font-weight: 500;
@@ -62,12 +63,12 @@ h1 {
     display: block;
     text-align: center;
     padding-top: 0.9rem;
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: "Tangerine", cursive, sans-serif;
+    font-size: 1rem;
+    font-family: "Kaushan Script", cursive, serif;
 }
 
 .accordionItem:last-of-type {
     padding-bottom: 0.9rem;
 }
 
+s
